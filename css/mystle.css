@@ -1,0 +1,129 @@
+body {
+    background-color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+h1 {
+    color: #2596b5;
+    text-align: center;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: lightskyblue;
+}
+
+a:hover {
+    color: dimgrey;
+}
+
+li {
+    float: right;
+}
+
+a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/*li a:hover:not(.active) {
+    background-color: #2596b5;
+}*/
+
+.active {
+    background-color: #2596b5;
+}
+div {
+    /*width: 24%;
+    height: 300px;*/
+    display: inline-block;
+    width: 12%;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    font-size: 5px;
+    border: 2px solid rgb(90, 191, 198);
+    border-radius: 6px;
+}
+div img {
+    width: 130px;
+    height: 450px;
+    display: block;
+    margin: auto;
+}
+
+div p {
+    font-family: verdana;
+    font-size: 18px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 30% 30% 30% ;
+    width: 1400px;
+    justify-content:space-between;
+    row-gap: 20px;
+    column-gap: 10px;
+    padding: 10px;
+    margin: 100px;
+}
+div.container img {
+    width: 50%;
+    height: 80%;
+    border: 15px solid lightpink;
+    border-radius: 6px;
+    padding: 10px;
+    background-color: white;
+    margin: 20px;
+    align-items: center;
+}
+
+div.flex1 img {
+    width: 250px;
+    height: 250px;
+    display: block;
+    border: 15px solid lightskyblue;
+    border-radius: 6px;
+    padding: 10px;
+    background-color: white;
+    margin: 20px;
+    align-items: center;
+}
+
+
+div.flex1 img:nth-child(2n){
+    border: 15px solid lightpink;
+}
+
+div.container img:nth-child(2n) {
+    border: 15px solid lightskyblue;
+}
+
+.flex1 {
+    margin-top: 100px;
+    position: relative;
+    display: flex;
+    Flex-wrap: wrap;
+    width: 1250px;
+    Justify-content: space-between;
+    row-gap: 50px;
+    column-gap: 40px;
+    padding: 30px;
+    align-content: space-around;
+}
+
+footer p {
+font-style: italic;
+font-size: 15px;
+}
